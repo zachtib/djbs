@@ -19,8 +19,6 @@ Quick start
 
 2. Include or extend the templates under djbs/ as necessary.
 
-3. If you need to use the included filters directly, they can be imported via
+3. If you need to use the included filters directly, they can be imported via::
 
-    
     {% load djbs_extras %}
-    
