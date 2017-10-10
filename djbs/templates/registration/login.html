@@ -1,0 +1,18 @@
+{% extends 'djbs/bootstrap.html' %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'djbs/css/signin.css' %}">
+{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <form method="post" class="form-signin">
+            <h2 class="form-signin-heading">Please sign in</h2>
+            {% csrf_token %}
+            {% include 'djbs/includes/form.html' %}
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+        </form>
+
+    </div> <!-- /container -->
+{% endblock %}
