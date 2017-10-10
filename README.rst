@@ -21,4 +21,6 @@ Quick start
 
 3. If you need to use the included filters directly, they can be imported via
 
+    
     {% load djbs_extras %}
+    
